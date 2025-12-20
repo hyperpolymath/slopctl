@@ -1,1 +1,82 @@
+;;; STATE.scm
+;;; Current and near-term state for NUJ H&S / PR work programme
 
+(project
+  (name "NUJ-HS-PR-2025-2027")
+  (time-horizon
+    (start "2025-04")       ; post-DM
+    (now   "2025-09")
+    (target "2027-05")      ; DM 2027 window
+  )
+
+  (constraints
+    (fte 0.2)               ; coordination capacity
+    (budget-total 1000)     ; GBP, 2-year period
+    (volunteer-driven? #t))
+
+  (status
+    (reporting-template
+      (pr-sector
+        (docx-template-ready? #t)
+        (includes-metrics? #t)
+        (includes-pmi-reflection? #t)
+        (adoption-target "all-sectors")))
+    (hazards-summary
+      (cross-sector-digest-ready? #t)
+      (length-pages 2)
+      (sectors-targeted
+        (freelance pr broadcast newspapers magazines online)))
+    (roadmap
+      (event-chain-methodology? #t)
+      (critical-chain-identified? #t)
+      (throughput-accounting-linked? #t)))
+
+  (agenda-upcoming-meeting
+    (first-time-topics
+      (ventilation-and-climate-bulletins
+        (scope "seasonal guidance + H&S framing")
+        (difficulty "low")
+        (visibility "high"))
+      (accessibility-charter-pilot
+        (scope "standards + hybrid activism + digital practices")
+        (difficulty "medium")
+        (visibility "high"))
+      (digital-doppelganger-and-ai-safety-draft
+        (scope "OSINT, AI-trolling, deepfakes, agentic AI risks")
+        (difficulty "high")
+        (visibility "very-high"))
+      (group-risk-assessment-templates
+        (scope "team/collective risk + class-action potential")
+        (difficulty "medium")
+        (visibility "medium-high"))))
+
+  (buffers
+    (time-buffer
+      (policy-buffer-months 2)   ; pre-DM
+      (comms-buffer-months 1))   ; pre-seasonal windows
+    (resource-buffer
+      (fte-reserve 0.02)         ; 10% of 0.2
+      (budget-reserve 100))      ; GBP contingency
+
+  (metrics
+    (core
+      (impact-units
+        (definition
+          "reach * urgency * H&S-alignment / resource-cost"))
+      (adoption
+        (report-template-use-rate "TBD")
+        (sectors-using-ventilation-bulletins "TBD")
+        (accessibility-charter-signatories "TBD"))
+      (communications
+        (newsletter-frequency "target: >= quarterly")
+        (articles-per-year-in-The-Journalist 2)
+        (labourstart-mentions-per-year 2))))
+
+  (risks
+    (under-recognition-of-expertise? #t)
+    (capacity-overload? #t)
+    (ai-threats-escalate-faster-than-policy? #t)
+    (mitigations
+      (use-templates-and-rituals? #t)
+      (prioritise-high-throughput-items-first? #t)
+      (ally-with-external-orgs? #t))) )
