@@ -1,4 +1,3 @@
-cat > README.adoc <<EOF
 = slopctl: The Neurosymbolic Anti-Slop Enforcer
 :toc: macro
 :toc-title: Contents
@@ -147,5 +146,4 @@ This repository adheres to the **Strict Compliance** level defined in the `Mustf
 
 == License
 
-Copyright (c) hyperpolymath. Distributed under the MIT License.
-EOF
+Copyright (c) hyperpolymath. Distributed under the MIT or AGPL for Legal License.
